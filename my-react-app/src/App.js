@@ -3,6 +3,7 @@ import React, { useState } from "react";
 // import ReactFirstProgram from './Components/ReactFirstProgram';
 import Display from "./Components/Display";
 import Button from "./Components/Button";
+import BulbOnOffProgram from "./Components/BulbOnOffProgram";
 function App() {
   const [counter, setCounter] = useState(50);
 
@@ -24,8 +25,13 @@ function App() {
 
       <div>
         <Display messege={counter} />
-        <Button onClickHandeler={incrementHandeler}/>
-        <Button onClickHandeler={decrementHandeler}/>
+        <Button onIncHandeler={incrementHandeler}  onDecHandeler={decrementHandeler}/>
+        {/* <Button onClickHandeler={decrementHandeler}/> */}
+      </div>
+
+
+      <div>
+        <BulbOnOffProgram />
       </div>
     </>
   );

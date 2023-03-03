@@ -1,8 +1,8 @@
 function Button (props){
     return(
         <>
-        <button onClick={props.onClickHandeler}>Click</button>
-        
+        <button onClick={props.onIncHandeler}>IncClick</button>
+        <button onClick={props.onDecHandeler}>DecClick</button>
         </>
     )
 }
