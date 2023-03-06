@@ -1,18 +1,19 @@
 import React, { useState } from "react";
+import Profile from "./Components/Profile";
 // import CounterProgram from './Components/CounterProgram';
 // import ReactFirstProgram from './Components/ReactFirstProgram';
-import Display from "./Components/Display";
-import Button from "./Components/Button";
-import BulbOnOffProgram from "./Components/BulbOnOffProgram";
+// import Display from "./Components/Display";
+// import Button from "./Components/Button";
+// import BulbOnOffProgram from "./Components/BulbOnOffProgram";
 function App() {
-  const [counter, setCounter] = useState(50);
+  // const [counter, setCounter] = useState(50);
 
-  function incrementHandeler() {
-    setCounter(counter + 5);
-  }
-  function decrementHandeler() {
-    setCounter(counter - 5)
-  }
+  // function incrementHandeler() {
+  //   setCounter(counter + 5);
+  // }
+  // function decrementHandeler() {
+  //   setCounter(counter - 5)
+  // }
   return (
     <>
       <div className="App">
@@ -24,14 +25,18 @@ function App() {
       </div>
 
       <div>
-        <Display messege={counter} />
-        <Button onIncHandeler={incrementHandeler}  onDecHandeler={decrementHandeler}/>
+        {/* <Display messege={counter} />
+        <Button onIncHandeler={incrementHandeler}  onDecHandeler={decrementHandeler}/> */}
         {/* <Button onClickHandeler={decrementHandeler}/> */}
       </div>
 
 
-      <div>
+      {/* <div>
         <BulbOnOffProgram />
+      </div> */}
+
+      <div>
+        <Profile />
       </div>
     </>
   );
