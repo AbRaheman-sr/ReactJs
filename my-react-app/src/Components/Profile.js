@@ -11,12 +11,6 @@ function Profile(){
         <>
         <h1>{Person.Name}</h1>
         <img src={Person.imgUrl} alt="" />
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-
         </>
     )
 }
